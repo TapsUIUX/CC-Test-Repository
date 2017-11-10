@@ -14,8 +14,13 @@ angular.module('myApp', ['ngRoute', 'ui.router'])
                     url:'/formatted',
                     templateUrl: 'Components/category.html',
                     controller: 'tableDataDisplay'
-                })            
-
+                })  
+                
+                .state('explanation', {
+                    url:'/explanation',
+                    templateUrl: 'Components/explanation.html'                    
+                })
+    
     
                 $urlRouterProvider.otherwise('/home');
 
